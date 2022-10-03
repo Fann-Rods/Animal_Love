@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+        <link rel="icon" href="img/icono/icono.png"/>
+        <link rel="stylesheet" href="css/style.css">
+        <title>Registro</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="js/index.js"></script>
+    </head>         
+    <body>
+        <div class="col-md-4 center">
+            <img src="img/logo.png" class="img-responsive" alt="titulo"/>
+            <div class="h-30"></div>
+        </div>
+        <div class="login reg">
+
+            <h1 class="text-center">Registrate</h1>
+            <form id="form-register" class="row g-2">
+                <div class="col-md-6">
+                    <label for="input-id_usuario" class="form-label">Número documento</label>
+                    <input type="text" class="form-control" id="input-id_usuario" required >
+                </div>
+                <div class="col-md-6">
+                    <label for="input-contrasenia" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="input-contrasenia"  required >
+                </div>
+                <div class="col-md-6">
+                    <label for="input-contrasenia-repeat" class="form-label">Repetir Contraseña</label>
+                    <input type="password" class="form-control" id="input-contrasenia-repeat"  required >
+                </div>
+                <div class="col-md-6">
+                    <label for="input-tipo_documento" class="form-label">Tipo Documento</label>
+                    <select id="input-tipo_documento" class="form-select" required >
+                        <option selected>C.C.</option>
+                        <option>Pasaporte</option>
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <label for="input-nombre" class="form-label">Nombres</label>
+                    <input type="text" class="form-control" id="input-nombre" required >
+                </div>
+                <div class="col-md-6">
+                    <label for="input-apellido" class="form-label">Apellidos</label>
+                    <input type="text" class="form-control" id="input-apellido" required >
+                </div>
+                <div class="col-md-6">
+                    <label for="input-telefono" class="form-label">Teléfono</label>
+                    <input type="text" class="form-control" id="input-telefono" required >
+                </div>
+                <div class="col-md-6">
+                    <label for="input-email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="input-email" required >
+                </div> 
+                <div class="col-md-6">
+                    <label for="input-departamento" class="form-label">Departamento</label>
+                    <select id="input-departamento" class="form-select" required >
+                        <option selected>Ubicacion...</option>
+                        <option>Bogotá D.C.</option>
+                        <option>Antioquia</option>
+                        <option>Valle del Cauca</option> 
+                        <option>Atlántico</option> 
+                        <option>Magdalena</option> 
+                        <option>Santander</option>
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <label for="input-ciudad" class="form-label">Ciudad</label>
+                    <select id="input-ciudad" class="form-select" required >
+                        <option selected>Ubicacion...</option>
+                        <option>Bogotá</option>
+                        <option>Medellín</option>
+                        <option>Cali</option> 
+                        <option>Barranquilla</option> 
+                        <option>Santa Marta</option> 
+                        <option>Bucaramanga</option>
+                    </select>
+                </div>             
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck" required>
+                        <div class="form_group" >
+                            <label >
+                                ¿Aceptas?<a class="link" href="">  Terminos y condiciones.</a> 
+                            </label>
+                        </div> 
+                    </div>
+                    <div class="col-12">
+                        <input type="submit" class="btn btn-success  w-100" value="Registrate">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

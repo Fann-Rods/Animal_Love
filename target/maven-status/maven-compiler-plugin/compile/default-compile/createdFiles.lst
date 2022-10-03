@@ -1,0 +1,10 @@
+beans\Mascota.class
+Controller\IUsuarioController.class
+beans\Usuario.class
+Servlets\ServletUsuarioLogin.class
+Servlets\ServletUsuarioRegister.class
+Servlets\PruebaServlet.class
+beans\Coincidencia.class
+Test\OperacionesBD.class
+Controller\UsuarioController.class
+connection\DBConnection.class
